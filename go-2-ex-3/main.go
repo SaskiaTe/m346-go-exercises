@@ -1,16 +1,29 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// TODO: create a map called "modules"
+	modules := make(map[int]string)
 
-	fmt.Println("Modul 104:", modules[104])
+	modules[114] = "Verschlüsslungsverfahren"
+	modules[117] = "Netzinfrastruktur"
+	modules[346] = "Cloud Lösungen konzipieren"
+	
+
+	fmt.Println("Modul 114:", modules[114])
 	fmt.Println("Modul 117:", modules[117])
 	fmt.Println("Modul 346:", modules[346])
 
-	// TODO: delete one
-	// TODO: add one
-	// TODO: replace one
+	// delete one
+	delete(modules, 117)
+	
+	// add one
+	modules[320] = "OOP Objekt orientiertes Programmieren"
+
+	// replace one
+	modules[320] = "Einfaches oop"
+
 	fmt.Println(modules)
 }
