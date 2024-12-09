@@ -3,7 +3,7 @@ import "fmt"
 
 func computeGrade(gotPoints int, maxPoints int) float64 {
 	if gotPoints <= 0 {
-		return 0 ;
+		return 1 ;
 	}
 	grade := float64(gotPoints) / float64(maxPoints) * 5 + 1
 	return grade;
